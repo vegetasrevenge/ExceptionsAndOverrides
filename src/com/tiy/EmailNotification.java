@@ -17,8 +17,9 @@ public class EmailNotification extends Notification {
     //cloning was not confusing at all.... yeah right!
     @Override
     protected Object clone() {
-        //search the intellij list after typing EmailNotification
-        return EmailNotification.this;
+
+        EmailNotification clone = new EmailNotification(this.getSubject(), this.getBody(), this.getRecipient(), this.getSmtpProvider());
+        return clone;
     }
 
     @Override

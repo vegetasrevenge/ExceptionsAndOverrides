@@ -11,10 +11,13 @@ public class Main {
 		emailNotification.clone();
 		Object emailNotificationClone = emailNotification.clone();
 
-		if (emailNotification.equals(emailNotificationClone)) {
-			System.out.println("Email and its are clone equal.");
-		} else {
-			System.out.println("Email and its clone are not equal.");
-		}
+		System.out.println(emailNotification);
+		System.out.println(emailNotificationClone);
+
+//		if (emailNotification.equals(emailNotificationClone)) {
+//			System.out.println("Email and its are clone equal.");
+//		} else {
+//			System.out.println("Email and its clone are not equal.");
+//		}
     }
 }
